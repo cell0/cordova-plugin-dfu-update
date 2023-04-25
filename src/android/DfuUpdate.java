@@ -118,7 +118,8 @@ public class DfuUpdate extends CordovaPlugin {
 					.setPacketsReceiptNotificationsEnabled(true)
 					.setPacketsReceiptNotificationsValue(packetReceiptNotificationsValue)
 					.setUnsafeExperimentalButtonlessServiceInSecureDfuEnabled(true)
-					.setDisableNotification(true);
+					.setDisableNotification(true)
+					.setForceScanningForNewAddressInLegacyDfu(false);
 			starter.setZip(fileUriStr);
 
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
