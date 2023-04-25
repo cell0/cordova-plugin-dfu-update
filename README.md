@@ -2,12 +2,18 @@
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 [![npm version](https://badge.fury.io/js/cordova-plugin-dfu-update.svg)](https://badge.fury.io/js/cordova-plugin-dfu-update)
 
+## Notes
+
+* This fork is based on the fork by @afloanalytics that fixed iOS and Android issues with newer versions
+* This fork disables `alternativeAdvertisingNameEnabled` on iOS to allow legacy DFU, see https://github.com/NordicSemiconductor/IOS-DFU-Library/blob/main/iOSDFULibrary/Classes/Implementation/DFUServiceInitiator.swift#L228-L248
+* Android-DFU-Library is updated to 2.1.0
+
+# Original readme
+
 This [Cordova](https://cordova.apache.org) Plugin is a Wrapper to use Nordic Semiconductor's Device Firmware Update (DFU) service to update a Bluetooth LE device.
 
 It currently uses [iOSDFULibrary](https://cocoapods.org/pods/iOSDFULibrary) (Version `4.8.0`) on iOS and 
 [Android-DFU-Library](https://github.com/NordicSemiconductor/Android-DFU-Library) (Default-Version `1.11.0`) on Android. 
-
-**This Plugin is in active development!**
 
 <!-- DONATE -->
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LMX5TSQVMNMU6&source=url)
